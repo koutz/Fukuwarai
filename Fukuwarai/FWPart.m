@@ -6,36 +6,21 @@
 //  Copyright (c) 2015年 hmcreation. All rights reserved.
 //
 
-#import <AVFoundation/AVFoundation.h>
-
+#import "FWSpeechSynthesizer.h"
 #import "FWPart.h"
 
-@interface FWPart () <AVSpeechSynthesizerDelegate>
+@interface FWPart ()
 @property (strong, nonatomic, readonly) NSString *speechText;
 @end
 
 
-// 全ての部品で読み上げ用インスタンスを共有する。
-static AVSpeechSynthesizer *_synthesizer;
-
 @implementation FWPart
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _synthesizer = [[AVSpeechSynthesizer alloc] init];
-        _synthesizer.delegate = self;
-    }
-    
-    return self;
-}
 
 // タッチ時効果音再生
 - (void)playTouchSE
 {
     // 直前に再生されてる効果音を停止
-    [_synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    [[FWSpeechSynthesizer getInstance] stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
     
     // 再生テキストなど設定
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:self.speechText];
@@ -44,7 +29,7 @@ static AVSpeechSynthesizer *_synthesizer;
     utterance.rate = 0.2;
     
     // 再生開始
-    [_synthesizer speakUtterance:utterance];
+    [[FWSpeechSynthesizer getInstance] speakUtterance:utterance];
 }
 
 @end
