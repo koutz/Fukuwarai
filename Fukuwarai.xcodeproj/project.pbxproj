@@ -16,6 +16,7 @@
 		689F47091A5950AC00AF449A /* FWPartImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 689F47081A5950AC00AF449A /* FWPartImageView.m */; };
 		68B7D7EA1A5F990200FE1F0A /* FWPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B7D7E91A5F990200FE1F0A /* FWPart.m */; };
 		68B7D7EC1A5FAE5B00FE1F0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7D7EB1A5FAE5B00FE1F0A /* AVFoundation.framework */; };
+		68B7D7EF1A61295700FE1F0A /* FWSpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B7D7EE1A61295700FE1F0A /* FWSpeechSynthesizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		68B7D7E81A5F990200FE1F0A /* FWPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWPart.h; sourceTree = "<group>"; };
 		68B7D7E91A5F990200FE1F0A /* FWPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWPart.m; sourceTree = "<group>"; };
 		68B7D7EB1A5FAE5B00FE1F0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		68B7D7ED1A61295700FE1F0A /* FWSpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWSpeechSynthesizer.h; sourceTree = "<group>"; };
+		68B7D7EE1A61295700FE1F0A /* FWSpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWSpeechSynthesizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				689F47081A5950AC00AF449A /* FWPartImageView.m */,
 				68B7D7E81A5F990200FE1F0A /* FWPart.h */,
 				68B7D7E91A5F990200FE1F0A /* FWPart.m */,
+				68B7D7ED1A61295700FE1F0A /* FWSpeechSynthesizer.h */,
+				68B7D7EE1A61295700FE1F0A /* FWSpeechSynthesizer.m */,
 				689F46EE1A591CCF00AF449A /* Images.xcassets */,
 				689F46E11A591CCF00AF449A /* Supporting Files */,
 			);
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B7D7EA1A5F990200FE1F0A /* FWPart.m in Sources */,
+				68B7D7EF1A61295700FE1F0A /* FWSpeechSynthesizer.m in Sources */,
 				689F46EA1A591CCF00AF449A /* FWViewController.m in Sources */,
 				689F46E71A591CCF00AF449A /* AppDelegate.m in Sources */,
 				689F46E41A591CCF00AF449A /* main.m in Sources */,
