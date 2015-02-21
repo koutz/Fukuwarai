@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE6B3A8D-AD1D-4678-89F6-56B057E46AD1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fukuwarai</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8E84B9DBED414790B4DA30B8EF4EC63244902C1</key>
+		<string>https://github.com/koutz/Fukuwarai.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fukuwarai.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8E84B9DBED414790B4DA30B8EF4EC63244902C1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/koutz/Fukuwarai.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8E84B9DBED414790B4DA30B8EF4EC63244902C1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8E84B9DBED414790B4DA30B8EF4EC63244902C1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fukuwarai</string>
+		</dict>
+	</array>
+</dict>
+</plist>

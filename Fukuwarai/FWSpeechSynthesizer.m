@@ -11,6 +11,7 @@
 static FWSpeechSynthesizer *_instance = nil;
 
 @interface FWSpeechSynthesizer () <AVSpeechSynthesizerDelegate>
+@property (strong, nonatomic) AVSpeechSynthesizer *synthesizer;
 @end
 
 @implementation FWSpeechSynthesizer
@@ -41,13 +42,28 @@ static FWSpeechSynthesizer *_instance = nil;
 {
     self = [super init];
     if (self) {
-        _instance.delegate = self;
     }
     return self;
 }
 
 + (id)getInstance {
 	return _instance;
+}
+
+- (void)setupSynthesizer
+{
+    _synthesizer = [[AVSpeechSynthesizer alloc] init];
+    _synthesizer.delegate = self;
+}
+
+- (BOOL)stopSpeakingAtBoundary:(AVSpeechBoundary)boundary
+{
+    return [self.synthesizer stopSpeakingAtBoundary:boundary];
+}
+
+- (void)speakUtterance:(AVSpeechUtterance *)utterance
+{
+    [self.synthesizer speakUtterance:utterance];
 }
 
 @end

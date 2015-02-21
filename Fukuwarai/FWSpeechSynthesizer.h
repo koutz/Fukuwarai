@@ -9,8 +9,12 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 
-@interface FWSpeechSynthesizer : AVSpeechSynthesizer
+@interface FWSpeechSynthesizer : NSObject
 
 + (id)getInstance;
+
+- (void)setupSynthesizer;
+- (BOOL)stopSpeakingAtBoundary:(AVSpeechBoundary)boundary;
+- (void)speakUtterance:(AVSpeechUtterance *)utterance;
 
 @end

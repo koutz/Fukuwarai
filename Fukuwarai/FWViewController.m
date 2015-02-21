@@ -7,8 +7,8 @@
 //
 
 #import "FWViewController.h"
-
 #import "FWPartImageView.h"
+#import "FWSpeechSynthesizer.h"
 
 @interface FWViewController () <UIGestureRecognizerDelegate>
 
@@ -41,6 +41,9 @@
         [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotationGesture:)];
     rotationGestureRecognizer.delegate = self;
     [self.view addGestureRecognizer:rotationGestureRecognizer];
+    
+    // speechSynthesizerの設定
+    [[FWSpeechSynthesizer getInstance] setupSynthesizer];
 }
 
 - (void)didReceiveMemoryWarning
