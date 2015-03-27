@@ -62,10 +62,10 @@
 // ランダムに移動
 - (void)moveRandomly
 {
-    int x = arc4random() % (int)self.superview.frame.size.width;
-    int y = arc4random() % (int)self.superview.frame.size.height;
-    int degrees = arc4random() % 360;
-    double radians = ((double)degrees / 360.0) * 2 * M_PI;
+    CGFloat x = arc4random() % (uint32_t)self.superview.frame.size.width;
+    CGFloat y = arc4random() % (uint32_t)self.superview.frame.size.height;
+    CGFloat degrees = arc4random() % 360;
+    CGFloat radians = (degrees / 360.0) * 2 * M_PI;
     CGAffineTransform transform = CGAffineTransformRotate(self.currentTransform, radians);
     [UIView animateWithDuration:0.25 animations:^{
         self.center = CGPointMake(x, y);
