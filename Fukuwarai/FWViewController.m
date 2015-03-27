@@ -174,7 +174,7 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     
     for (NSInteger i = 0; i < recognizer.numberOfTouches; i++) {
         CGPoint location = [recognizer locationOfTouch:i inView:self.view];
-        UIView *view = [self.view hitTest:location withEvent:UIEventTypeTouches];
+        UIView *view = [self.view hitTest:location withEvent:[[UIEvent alloc] init]];
         if ([view isKindOfClass:[FWPartImageView class]]) {
             partImageView = (FWPartImageView *)view;
             break;
